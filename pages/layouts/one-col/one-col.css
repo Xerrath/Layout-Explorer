@@ -1,0 +1,33 @@
+/* Desktop layout for: 1-Column (Stacked) */
+
+.site {
+  display: grid;
+  gap: var(--site-gap);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "b1"
+    "b2"
+    "footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+}
+
+.aside-one {
+  grid-area: b1;
+}
+
+.aside-two {
+  grid-area: b2;
+}
+
+.site-footer {
+  grid-area: footer;
+}

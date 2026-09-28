@@ -1,0 +1,31 @@
+/* Desktop layout for: 3-Column: Both Asides Left */
+
+.site {
+  display: grid;
+  gap: var(--site-gap);
+  grid-template-columns: 1fr 1fr 2.2fr;
+  grid-template-areas:
+    "header header header"
+    "b1     b2     main"
+    "footer footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+}
+
+.aside-one {
+  grid-area: b1;
+}
+
+.aside-two {
+  grid-area: b2;
+}
+
+.site-footer {
+  grid-area: footer;
+}

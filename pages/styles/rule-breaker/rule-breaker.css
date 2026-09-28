@@ -1,0 +1,46 @@
+/* Rule Breaker */
+
+:root {
+  --site-bg: #e9e4f5;
+  --header-bg: #ffffff;
+  --footer-bg: #3b2e5a;
+  --footer-text: #ffffff;
+  --accent: #6b3fa0;
+}
+
+/* Swap the header and footer */
+.site-header {
+  grid-area: footer;
+}
+
+.site-footer {
+  grid-area: header;
+}
+
+/* Shrink the main content */
+.site-main {
+  font-size: 0.72rem;
+}
+
+.main-hero-image {
+  height: 5rem;
+}
+
+/* Make the asides shout */
+.ad-block {
+  display: block;
+  margin: 0 0 0.75rem;
+  padding: 1rem;
+  font: 900 1.6rem/1.15 Impact, sans-serif;
+  text-align: center;
+  background: #ff2d55;
+  color: #ffffff;
+}
+
+.aside-heading {
+  font-size: 1.8em;
+}
+
+.aside-image {
+  height: 14rem;
+}

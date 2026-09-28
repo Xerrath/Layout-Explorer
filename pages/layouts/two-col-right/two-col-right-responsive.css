@@ -1,0 +1,76 @@
+/* Mobile-first media queries for: 2-Column: Main Left, Aside Right */
+/* These only run when "Make it responsive" is on. */
+/* This file rebuilds the page mobile first: phone styles with no media query, */
+/* then min-width media queries add more columns as the screen gets bigger. */
+
+/* Phone first: no media query needed */
+.site {
+  display: grid;
+  gap: var(--site-gap);
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-template-areas:
+    "header"
+    "main"
+    "b1"
+    "b2"
+    "footer";
+}
+
+.site-header {
+  justify-content: center;
+  text-align: center;
+}
+
+.site-nav-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-heading {
+  font-size: 1.6em;
+}
+
+.main-hero-image {
+  height: 12rem;
+}
+
+/* Tablet: 600px and up */
+@media (min-width: 600px) {
+  .site {
+    display: grid;
+    gap: var(--site-gap);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "main   b1"
+      "main   b2"
+      "footer footer";
+  }
+
+  /* Undo the phone-only tweaks now that there is more room */
+  .site-header {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .site-nav-list {
+    justify-content: flex-start;
+  }
+
+  .main-heading {
+    font-size: 2em;
+  }
+
+  .main-hero-image {
+    height: 16rem;
+  }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+  .site {
+    grid-template-columns: 3fr 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+/* Bold and Colorful */
+
+:root {
+  --site-bg: #ffd23f;
+  --text: #111111;
+  --muted: #222222;
+  --heading: #111111;
+  --region-bg: #ffffff;
+  --region-border: 4px solid #111111;
+  --region-shadow: 6px 6px 0 #111111;
+  --header-bg: #3a2e91;
+  --header-text: #ffffff;
+  --footer-bg: #3a2e91;
+  --footer-text: #ffffff;
+  --accent: #ff4f79;
+  --accent-text: #111111;
+  --radius: 0;
+  --image-radius: 0;
+  --heading-font: Impact, "Arial Black", sans-serif;
+  --site-gap: 1.25rem;
+}
+
+.main-heading {
+  font-size: 2.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.aside-one {
+  background: #ff8fa8;
+}
+
+.aside-two {
+  background: #6fe0ea;
+}
+
+.main-button,
+.signup-button {
+  border: 3px solid #111111;
+  border-radius: 0;
+}
+
+img {
+  border: 3px solid #111111;
+}

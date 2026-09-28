@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean and Modern | Layout Explorer</title>
+  <link rel="stylesheet" href="../../../shared/css/global.css">
+</head>
+<body data-root="../../../" data-type="styles" data-id="clean">
+
+  <header class="site-top" id="site-header"></header>
+
+  <main class="page">
+
+    <!-- About This Example -->
+    <section class="viewer-top">
+      <div class="card">
+        <p class="kicker">Style</p>
+        <h1 class="page-title">Clean and Modern</h1>
+      <p class="page-text">Every style page uses the same 2-column layout and the same content. Only the style changes. Judge it on your worksheet.</p>
+      <p class="page-text">Soft colors, one serif and one sans-serif font, and lots of space.</p>
+      </div>
+
+      <!-- Screen Size Controls -->
+      <div class="card">
+        <p class="controls-label">Screen size</p>
+        <div class="screen-buttons" id="screen-buttons"></div>
+        <div class="responsive-row">
+          <label class="switch">
+            <input class="switch-input" id="responsive-toggle" type="checkbox">
+            <span class="switch-track" aria-hidden="true"></span>
+            Make it responsive
+          </label>
+          <p class="readout"><span class="readout-width" id="readout-width"></span>. <span class="readout-query" id="readout-query"></span></p>
+        </div>
+        <p class="readout">Look at the code: open <a href="demo.html" target="_blank" rel="noopener">demo.html</a>. <code>clean.css</code> holds this style.</p>
+      </div>
+    </section>
+
+    <!-- Example Website in a Device Frame -->
+    <div class="device-stage" id="device-stage">
+      <div class="device" id="device">
+        <iframe class="demo-frame" id="demo-frame" title="Example website: Clean and Modern"></iframe>
+      </div>
+    </div>
+
+    <nav class="pager" id="pager" aria-label="Previous and next example"></nav>
+
+  </main>
+
+  <footer class="site-bottom">
+    <p>West-MEC Coding Year 1. Layout ideas from MDN "What do common web layouts contain?"</p>
+    <p>Photos from Unsplash by Karl Fredrickson, Daniel Ruswick, Carli Jean, Sonja Langford, Vee O, sergee bee, and Matthew Wiebe.</p>
+  </footer>
+
+  <script src="../../../shared/js/data.js"></script>
+  <script src="../../../shared/js/navbar.js"></script>
+  <script src="../../../shared/js/viewer.js"></script>
+</body>
+</html>

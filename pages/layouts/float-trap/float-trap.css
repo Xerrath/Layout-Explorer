@@ -1,0 +1,35 @@
+/* Desktop layout for: It's a Trap! Floating Asides */
+
+/* No grid here at all. The asides float and the main content flows around them. */
+.site {
+  display: block;
+}
+
+.region {
+  margin-bottom: var(--site-gap);
+}
+
+.aside-one {
+  float: left;
+  z-index: 1;
+  width: 30%;
+  margin-right: var(--site-gap);
+}
+
+.aside-two {
+  float: right;
+  z-index: 1;
+  width: 28%;
+  margin-top: 8rem;
+  margin-left: var(--site-gap);
+}
+
+/* flow-root keeps the hero image beside the floats instead of sliding under them */
+.main-hero {
+  display: flow-root;
+}
+
+/* clear: both makes the footer wait until both floats are done */
+.site-footer {
+  clear: both;
+}

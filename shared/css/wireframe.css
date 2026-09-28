@@ -1,0 +1,67 @@
+/* Wireframe view */
+/* Gray = what the user can see. Light red = invisible containers (grid, flex, or float parents) that line things up. */
+
+:root {
+  --site-bg: #ffffff;
+  --text: #555555;
+  --muted: #777777;
+  --heading: #333333;
+  --region-bg: #eef0f2;
+  --region-border: 2px solid #9aa1a9;
+  --region-shadow: none;
+  --header-bg: #eef0f2;
+  --header-text: #333333;
+  --footer-bg: #eef0f2;
+  --footer-text: #333333;
+  --accent: #9aa1a9;
+  --accent-text: #ffffff;
+  --radius: 0.25rem;
+  --image-radius: 0;
+  --heading-font: "Courier New", monospace;
+  --body-font: "Courier New", monospace;
+  --container-red: #ef6b6b;
+  --container-fill: rgba(239, 107, 107, 0.06);
+}
+
+/* Visible parts all look the same gray so only the structure stands out */
+.region {
+  background: var(--region-bg);
+  color: var(--text);
+}
+
+/* Hide the photo and draw the classic "X" placeholder box instead */
+img {
+  object-position: -9999px 0;
+  border: 2px solid #9aa1a9;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1px), #9aa1a9 50%, transparent calc(50% + 1px)),
+    linear-gradient(to top left, transparent calc(50% - 1px), #9aa1a9 50%, transparent calc(50% + 1px)),
+    #dfe3e6;
+}
+
+/* Invisible containers: the user never sees these boxes, but they control where things go */
+.site,
+.site-brand,
+.site-nav-list,
+.main-hero,
+.menu-cards,
+.menu-card,
+.hours-list li,
+.signup-form {
+  outline: 2px dashed var(--container-red);
+  outline-offset: -2px;
+  background-color: var(--container-fill);
+}
+
+/* The page-level container stays white so the tint doesn't cover everything */
+.site {
+  background-color: #ffffff;
+}
+
+/* Give the red boxes a little room so they don't hide behind the gray ones */
+.site-brand,
+.site-nav-list,
+.menu-card,
+.signup-form {
+  padding: 0.3rem;
+}

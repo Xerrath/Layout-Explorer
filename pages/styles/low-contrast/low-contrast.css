@@ -1,0 +1,29 @@
+/* Low Contrast */
+
+:root {
+  --site-bg: #ffffff;
+  --text: #cfcfcf;
+  --muted: #d9d9d9;
+  --heading: #d4d4d4;
+  --region-bg: #fbfbfb;
+  --region-shadow: none;
+  --header-bg: #fbfbfb;
+  --header-text: #d0d0d0;
+  --footer-bg: #f3f3f3;
+  --footer-text: #dddddd;
+  --accent: #eaeaea;
+  --accent-text: #ffffff;
+  --base-size: 0.82rem;
+  --heading-font: "Segoe UI Light", "Segoe UI", sans-serif;
+}
+
+.main-heading,
+.aside-heading,
+.site-name {
+  font-weight: 300;
+}
+
+img {
+  opacity: 0.45;
+  filter: grayscale(0.6);
+}

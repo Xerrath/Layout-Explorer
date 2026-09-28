@@ -1,0 +1,33 @@
+/* Desktop layout for: 2-Column: Aside Left, Main Right */
+
+.site {
+  display: grid;
+  gap: var(--site-gap);
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "b1     main"
+    "b2     main"
+    "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+}
+
+.aside-one {
+  grid-area: b1;
+}
+
+.aside-two {
+  grid-area: b2;
+}
+
+.site-footer {
+  grid-area: footer;
+}

@@ -1,0 +1,44 @@
+/* Desktop layout for: Overlapping Header */
+
+.site {
+  display: grid;
+  gap: var(--site-gap);
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main   b1"
+    "main   b2"
+    "footer footer";
+}
+
+/* The header and main share row 1, so the header sits on top of the main image */
+.site-header {
+  grid-area: 1 / 1 / 2 / 3;
+  z-index: 2;
+  align-self: start;
+  margin: 0.75rem 1.5rem 0;
+  padding-bottom: 1.75rem;
+  border-radius: 0 0 50% 50% / 0 0 2.5rem 2.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.site-main {
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.main-hero-image {
+  height: 26rem;
+}
+
+.aside-one {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.aside-two {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.site-footer {
+  grid-area: 4 / 1 / 5 / 3;
+}

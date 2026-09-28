@@ -1,0 +1,23 @@
+/* Dark Mode */
+
+:root {
+  --site-bg: #121417;
+  --text: #e6e8ec;
+  --muted: #a9b1bd;
+  --heading: #ffffff;
+  --region-bg: #1d2127;
+  --region-border: 1px solid #2d333c;
+  --region-shadow: none;
+  --header-bg: #1d2127;
+  --header-text: #ffffff;
+  --footer-bg: #0b0c0e;
+  --footer-text: #a9b1bd;
+  --accent: #f2a65a;
+  --accent-text: #121417;
+}
+
+.signup-input {
+  background: #121417;
+  border-color: #3a414c;
+  color: #e6e8ec;
+}

@@ -1,0 +1,39 @@
+/* High Contrast */
+
+:root {
+  --site-bg: #000000;
+  --text: #ffffff;
+  --muted: #ffffff;
+  --heading: #ffffff;
+  --region-bg: #000000;
+  --region-border: 3px solid #ffffff;
+  --region-shadow: none;
+  --header-bg: #000000;
+  --header-text: #ffffff;
+  --footer-bg: #000000;
+  --footer-text: #ffffff;
+  --accent: #ffe600;
+  --accent-text: #000000;
+  --radius: 0.25rem;
+  --image-radius: 0;
+  --heading-font: Verdana, Arial, sans-serif;
+  --body-font: Verdana, Arial, sans-serif;
+  --base-size: 1.15rem;
+}
+
+.site-nav-link {
+  color: #ffe600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.site-nav-link:focus-visible,
+.main-button:focus-visible {
+  outline: 4px solid #00e5ff;
+  outline-offset: 3px;
+}
+
+.main-button {
+  border: 3px solid #ffffff;
+  text-decoration: underline;
+}

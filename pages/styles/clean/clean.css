@@ -1,0 +1,19 @@
+/* Clean and Modern */
+
+:root {
+  --site-bg: #f4f1ec;
+  --text: #2b2420;
+  --muted: #6b5f57;
+  --heading: #2b2420;
+  --region-bg: #ffffff;
+  --region-shadow: 0 2px 12px rgba(43, 36, 32, 0.08);
+  --header-bg: #ffffff;
+  --header-text: #2b2420;
+  --footer-bg: #2b2420;
+  --footer-text: #f4f1ec;
+  --accent: #8a4b2a;
+  --accent-text: #ffffff;
+  --radius: 1rem;
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: "Segoe UI", system-ui, Arial, sans-serif;
+}

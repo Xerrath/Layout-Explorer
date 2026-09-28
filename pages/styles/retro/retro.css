@@ -1,0 +1,66 @@
+/* Retro 1998 */
+
+:root {
+  --site-bg: #000080;
+  --text: #000000;
+  --muted: #000000;
+  --heading: #ff00ff;
+  --region-bg: #c0c0c0;
+  --region-border: 5px outset #e0e0e0;
+  --region-shadow: none;
+  --header-bg: #c0c0c0;
+  --header-text: #0000ee;
+  --footer-bg: #c0c0c0;
+  --footer-text: #000000;
+  --accent: #ff0000;
+  --accent-text: #ffff00;
+  --radius: 0;
+  --image-radius: 0;
+  --heading-font: "Times New Roman", serif;
+  --body-font: "Comic Sans MS", "Comic Sans", cursive;
+  --site-gap: 0.6rem;
+}
+
+.site {
+  background-image: url("../../../assets/images/beans.jpg");
+  background-size: 140px;
+  text-align: center;
+}
+
+.site-header {
+  justify-content: center;
+}
+
+.site-name {
+  font-size: 2em;
+  color: #ff0000;
+  text-shadow: 2px 2px 0 #ffff00;
+}
+
+.site-nav-link {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+.main-heading {
+  font-size: 2.4em;
+  text-shadow: 2px 2px 0 #00ffff;
+}
+
+img {
+  border: 4px ridge #ffd700;
+}
+
+.main-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-button {
+  border-radius: 0;
+  border: 4px outset #ff6666;
+}
+
+.hours-list li {
+  justify-content: center;
+}
